@@ -1,0 +1,12 @@
+.feedback {
+	max-width: 610px;
+	width: 100%;
+
+	&__headline {
+		font-weight: 700;
+		color: $primary-color-white;
+		margin-bottom: 20px;
+	}
+}
+
+@import "post/post";

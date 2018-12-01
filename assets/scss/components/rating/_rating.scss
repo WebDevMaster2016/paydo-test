@@ -1,0 +1,30 @@
+.rating {
+	display: inline-flex;
+	align-items: center;
+
+	&__list {
+		display: inline-flex;
+	}
+
+	&__element {
+
+		& + .rating__element {
+			padding-left: 5px;
+		}
+
+		.custom-icon-like {
+			width: 15px;
+			height: 15px;
+			color: #a7a7a7;
+			display: block;
+			pointer-events: none;
+		}
+
+		&.rating__element--selected {
+			.custom-icon-like {
+				color: $primary-color-green;
+			}
+		}
+
+	}
+}
