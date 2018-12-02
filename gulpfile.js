@@ -9,12 +9,12 @@ const gulp         = require('gulp'),
 	  rename       = require('gulp-rename'),
 	  csso         = require('gulp-csso'),
 	  svgSprite    = require('gulp-svg-sprites'),
-	  rigger       = require('gulp-rigger'),
 	  uglify       = require('gulp-uglify'),
 	  svgo         = require('gulp-svgo'),
 	  imagemin     = require('gulp-imagemin'),
 	  connect      = require('gulp-connect'),
-	  runSequence  = require('run-sequence');
+	  runSequence  = require('run-sequence'),
+	  htmlPartial  = require('gulp-html-partial');
 
 // define global path for source, destination and watching
 const path = {
@@ -61,7 +61,9 @@ gulp.task('connect', function () {
 gulp.task('importHtml', function () {
 	return gulp.src(path.assets.html)
 		.pipe(plumber())
-		.pipe(rigger())
+		.pipe(htmlPartial({
+			basePath: 'assets/html/'
+		}))
 		.pipe(gulp.dest(path.dist.html));
 });
 

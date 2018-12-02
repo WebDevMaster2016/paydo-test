@@ -1,6 +1,14 @@
 .feedback {
 	max-width: 610px;
 	width: 100%;
+	margin-bottom: 150px;
+
+	&__section {
+
+		&--all {
+			margin-top: 50px;
+		}
+	}
 
 	&__headline {
 		font-weight: 700;

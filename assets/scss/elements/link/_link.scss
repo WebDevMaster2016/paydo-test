@@ -1,0 +1,11 @@
+.link {
+	font-size: 14px;
+	font-weight: 300;
+	color: $primary-color-white-transparent;
+	letter-spacing: 0.0571991px;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}

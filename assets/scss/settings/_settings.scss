@@ -1,5 +1,11 @@
 $font-stack: 'Roboto', sans-serif;
 $base-font-size: 14px;
 $primary-color-white: #ffffff;
-$primary-color-green: #7ED321;
+$primary-color-white-transparent: rgba(#ffffff, .8);
+$primary-color-white-half-transparent: rgba(#ffffff, .5);
+$primary-color-green: #7ed321;
 $primary-bg-color: #181818;
+$empty-avatar-bg: #d8d8d8;
+$add-reply-bg-color: #565656;
+
+$mobile-breakpoint: 400px;
